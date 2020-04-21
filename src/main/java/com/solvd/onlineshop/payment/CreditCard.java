@@ -26,10 +26,10 @@ public class CreditCard implements IPay {
 
 	}
 
-	@Override
-	public String pay(double amount) {
+	
+	public void pay(double amount) {
 
-		return "Payment Processed";
+		LOGGER.info(" Credit card Payment complete");
 
 	}
 

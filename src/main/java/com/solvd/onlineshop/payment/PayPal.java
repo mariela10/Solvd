@@ -22,12 +22,11 @@ public class PayPal implements IPay {
 		this.password = password;
 
 	}
-	@Override
-	public String pay(double amount) {
+	
+	public void pay(double amount) {
 
-		LOGGER.info("Payment complete");
-		return null;
-
+		LOGGER.info("Paypal payment complete");
+		
 	}
 
 	public String getUserName() {
