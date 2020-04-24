@@ -1,6 +1,7 @@
 package com.solvd;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -52,12 +53,12 @@ public class MyLinkedList {
 		LOGGER.info("list after switching first and last " + linkedlist);
 
 		printMiddle(linkedlist);
+		listItterator(linkedlist);
 
 	}
-	public void listItterator(LinkedList ls) {
-		for (int i = 0; i < ls.size(); i++) {
-			LOGGER.info(ls.get(i));
-		}
+	public static void listItterator(LinkedList<Product> ls) {
+		Stream<Product> stream= ls.stream();
+		stream.forEach(p-> LOGGER.info(p));
 	}
 	
 
