@@ -64,7 +64,7 @@ public class PayPal implements IPay {
 	@Override
 	public String validateCard(String ccNumber, Date expDate, int cvcCode, Enum<CardType> card)
 			throws InvalidCardException {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
